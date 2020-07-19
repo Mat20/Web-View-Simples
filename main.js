@@ -7,9 +7,11 @@ let contents;
 function createWindow () {
   // Cria uma janela de navegação.
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    titleBarStyle: 'hidden',
+    width: config.width,
+    height: config.height,
+    //transparent: true,
+    frame: false,
+    //titleBarStyle: 'hidden',
     alwaysOnTop: true,
     webPreferences: {
       nodeIntegration: true
